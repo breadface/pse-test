@@ -1,0 +1,11 @@
+export const theme = {
+  colors: {
+    lightGrey: "#EFEFEF",
+    purple: "#828ED2"
+  }
+};
+
+export default {
+  api: "",
+  regionList: []
+};

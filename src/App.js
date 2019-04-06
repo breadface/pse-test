@@ -1,28 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import { withStyles } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+import Regions from "./pages/regions";
+import Countries from "./pages/countries";
+import Header from "./components/shared/Header";
+import NoMatch from "./components/shared/NoMatch";
+import { appStyles } from "./styles";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
-
-export default App;
+const App = ({ classes }) => (
+  <Grid>
+    <Header />
+    <Grid className={classes.wrapper}>
+      <Switch>
+        <Route exact path="/" component={Regions} />
+        <Route path="/region/:id" component={Countries} />
+        <Route component={NoMatch} />
+      </Switch>
+    </Grid>
+  </Grid>
+);
+export default withStyles(appStyles)(App);
