@@ -44,12 +44,8 @@ const Countries = ({ match, classes }) => {
           <div>
             <Grid className={classes.buttonContainer}>
               Sort by:
-              <Button focusVisible onClick={onSortBy("name")}>
-                Name
-              </Button>
-              <Button focusVisible onClick={onSortBy("population")}>
-                Population
-              </Button>
+              <Button onClick={onSortBy("name")}>Name</Button>
+              <Button onClick={onSortBy("population")}>Population</Button>
             </Grid>
           </div>
 

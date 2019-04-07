@@ -6,6 +6,6 @@ export const theme = {
 };
 
 export default {
-  api: "",
-  regionList: []
+  api: "https://restcountries.eu/rest/v2/region",
+  regionList: ["Africa", "Americas", "Asia", "Europe", "Oceania"]
 };

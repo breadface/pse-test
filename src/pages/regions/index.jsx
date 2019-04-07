@@ -5,12 +5,11 @@ import Grid from "@material-ui/core/Grid";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { regionStyles } from "./styles";
-
-const regionList = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
+import config from "../../config";
 
 const Regions = ({ classes, history }) => (
   <Grid container spacing={16}>
-    {regionList.map((name, key) => (
+    {config.regionList.map((name, key) => (
       <Grid item md={3} xs={12}>
         <Card
           container
