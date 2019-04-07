@@ -1,7 +1,7 @@
 # Countries
 
 This project displays the world nations grouped by region and sorted by name or population density.
-The application consumes the [restcountries api](https://restcountries.eu/) and is live on [link](https://github.io.com/breadface/countries).
+The application consumes the [restcountries api](https://restcountries.eu/) and is live on [link](https://breadface.github.io/pse-test).
 
 ## Getting started
 
@@ -20,7 +20,3 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-
-### `npm run eject`
-
-This runs your test locally
